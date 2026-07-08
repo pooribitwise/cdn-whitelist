@@ -7,19 +7,12 @@ The IPs are obtained from the main sources and updated daily.
 
 ---
 ## Usage
-1. Download the project file:
+1. Run installing script:
 ```bash
-git clone https://github.com/pooribitwise/cdn-whitelist.git && cd cdn-whitelist
+curl https://raw.githubusercontent.com/pooribitwise/cdn-whitelist/refs/heads/main/install.sh | sudo sh
 ```
-2. Make the install script executable:
-```bash
-chmod +x install.sh
-```
-3. Run the script as root:
-```bash
-sudo ./install.sh
-```
-4. Check if everything's fine:
+
+2. Check if everything's fine:
 ```bash
 # must show dead and exited successfully
 systemctl status cdn-updater.service
